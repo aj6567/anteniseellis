@@ -45,22 +45,38 @@
             margin: 0 auto;
             position: relative;
             z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 40px;
         }
 
-        .banner h1 {
+        .banner-text {
+            flex: 1;
+        }
+
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            object-fit: cover;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        .banner-text h1 {
             font-size: 3.5em;
             margin-bottom: 10px;
             font-weight: 700;
         }
 
-        .banner h2 {
+        .banner-text h2 {
             font-size: 1.5em;
             margin-bottom: 20px;
             font-weight: 300;
             opacity: 0.95;
         }
 
-        .banner p {
+        .banner-text p {
             font-size: 1.1em;
             margin-bottom: 30px;
             max-width: 800px;
@@ -281,7 +297,34 @@
             font-size: 1.1em;
         }
 
+        .view-dashboard-btn {
+            display: inline-block;
+            background: #3b82f6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 10px;
+            transition: background 0.2s, transform 0.2s;
+        }
+
+        .view-dashboard-btn:hover {
+            background: #2563eb;
+            transform: translateY(-2px);
+        }
+
         @media (max-width: 768px) {
+            .banner-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .profile-photo {
+                width: 150px;
+                height: 150px;
+            }
+
             .banner h1 {
                 font-size: 2.5em;
             }
@@ -304,17 +347,20 @@
     <!-- Banner Section -->
     <div class="banner">
         <div class="banner-content">
-            <h1>Antenise Ellis</h1>
-            <h2>Business Intelligence Analyst | Data Analyst</h2>
-            <p>Transforming healthcare data into actionable insights through analytics and visualization</p>
-            <div class="skills-tags">
-                <span class="skill-tag">Power BI</span>
-                <span class="skill-tag">SQL</span>
-                <span class="skill-tag">Python</span>
-                <span class="skill-tag">ETL</span>
-                <span class="skill-tag">Data Visualization</span>
-                <span class="skill-tag">Healthcare Analytics</span>
+            <div class="banner-text">
+                <h1>Antenise Ellis</h1>
+                <h2>Business Intelligence Analyst | Data Analyst</h2>
+                <p>Transforming healthcare data into actionable insights through analytics and visualization</p>
+                <div class="skills-tags">
+                    <span class="skill-tag">Power BI</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">ETL</span>
+                    <span class="skill-tag">Data Visualization</span>
+                    <span class="skill-tag">Healthcare Analytics</span>
+                </div>
             </div>
+            <img src="profile-photo.jpg" alt="Antenise Ellis" class="profile-photo">
         </div>
     </div>
 
@@ -385,6 +431,7 @@
                         <li>Enabled data-driven resource allocation decisions</li>
                     </ul>
                 </div>
+                <a href="#" class="view-dashboard-btn" target="_blank">📊 View Dashboard</a>
             </div>
 
             <div class="project-card">
@@ -399,6 +446,7 @@
                         <li>Optimized drug formularies and reduced treatment costs</li>
                     </ul>
                 </div>
+                <a href="#" class="view-dashboard-btn" target="_blank">📊 View Dashboard</a>
             </div>
 
             <div class="project-card">
@@ -413,6 +461,7 @@
                         <li>Automated workflows improving decision-making speed</li>
                     </ul>
                 </div>
+                <a href="#" class="view-dashboard-btn" target="_blank">📊 View Dashboard</a>
             </div>
         </section>
 
