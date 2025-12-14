@@ -1,7 +1,7 @@
 ![Header](./banner.png)
 
 ## 👋 About Me
-Business Intelligence Analyst specializing in healthcare analytics, supply chain optimization, and data-driven decision-making. Currently at McKesson, I transform complex datasets into executive-ready dashboards and actionable insights. I leverage Power BI, SQL, and Python to drive process improvements and deliver measurable business value across healthcare operations.
+Data professional transitioning to Business Intelligence through self-directed mastery of Power BI, SQL, and Python. I build executive-ready dashboards and analytical solutions for healthcare operations and supply chain optimization—delivering actionable insights that drive strategic decision-making and measurable business value.
 
 ## 🛠️ Technical Skills
 
