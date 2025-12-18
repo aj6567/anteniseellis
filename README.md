@@ -1,4 +1,4 @@
-![Header](./banner.png)
+![Header](./banner.png.jpg)
 
 ## 👋 About Me
 Data professional transitioning to Business Intelligence through self-directed mastery of Power BI, SQL, and Python. I build executive-ready dashboards and analytical solutions for healthcare operations and supply chain optimization—delivering actionable insights that drive strategic decision-making and measurable business value.
