@@ -71,10 +71,10 @@ Supporting pharmaceutical solutions operations with data tracking, order process
 
 ## 📫 Let's Connect
 
-- 💼 [LinkedIn](https://linkedin.com/in/AnteniseEllis)
+- 💼 [LinkedIn](https://linkedin.com/in/antenise-ellis-data-analyst)
 - 📧 anteniseellis@gmail.com
 - 📱 (682) 403-2286
-- 🌐 [Portfolio](https://portfoliosample.com)
+- 🌐 [Portfolio](https://aj6567.github.io/anteniseellis/)
 
 ---
 ⭐ **Specialties:** Healthcare Analytics | Supply Chain Optimization | Executive Dashboards | Process Automation
