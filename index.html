@@ -42,7 +42,6 @@
 
     /* About Me */
     .about-text { font-size: 1.1em; line-height: 1.8; color: #555; }
-    .disclaimer { margin-top: 15px; font-size: 0.95em; font-style: italic; color: #666; }
 
     /* Contact Grid */
     .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px,1fr)); gap: 20px; margin-top: 20px; }
@@ -100,33 +99,119 @@
         <p class="about-text">
             Data professional transitioning to Business Intelligence through self-directed mastery of Power BI, SQL, and Python. I build executive-ready dashboards and analytical solutions for healthcare operations and supply chain optimization—delivering actionable insights that drive strategic decision-making and measurable business value.
         </p>
-        <p class="disclaimer">All projects use simulated or publicly inspired datasets and do not contain proprietary or confidential information.</p>
     </section>
 
     <!-- Featured Projects -->
     <section id="projects">
         <h2>📊 Featured Projects</h2>
 
+        <!-- GPO Project -->
         <div class="project-card">
             <div class="project-tools">Tools: Python (pandas, NumPy), Power BI, Power Query, DAX, SQL</div>
             <h3>🏥 GPO Membership & Contract Analytics Dashboard</h3>
-            <p>Built interactive dashboard tracking 2,500+ GPO members and contract performance metrics. Identified regions with lowest contract adoption rates, enabling targeted intervention strategies.</p>
+            <p>Built interactive dashboard tracking 2,500+ GPO members and contract performance metrics. Identified regions with lowest contract adoption rates, enabling targeted intervention strategies. Automated data refresh processes for repeatable, accurate reporting.</p>
+            <ul>
+                <li>Tracked membership growth and contract adoption rates</li>
+                <li>Measured cost savings and vendor performance</li>
+                <li>Enabled data-driven resource allocation decisions</li>
+            </ul>
             <button class="view-dashboard-btn" onclick="toggleCaseStudy('gpo')">📊 View Case Study & Screenshots</button>
         </div>
 
+        <!-- Oncology Project -->
         <div class="project-card">
-            <div class="project-tools">Tools: Python (pandas, NumPy), Power BI, DAX</div>
+            <div class="project-tools">Tools: Python (pandas, NumPy), Matplotlib, Seaborn, Power BI, DAX</div>
             <h3>💊 Oncology Drug Utilization & Patient Outcomes Dashboard</h3>
-            <p>Analyzed patient treatment records to identify therapy effectiveness, utilization trends, and regional disparities.</p>
+            <p>Analyzed 5,000+ patient treatment records revealing targeted therapies achieved 62% improvement rates. Identified regional treatment disparities and seasonal demand patterns to inform resource allocation.</p>
+            <ul>
+                <li>Revealed 15% year-over-year growth in immunotherapy</li>
+                <li>Identified March and September demand peaks</li>
+                <li>Optimized drug formularies and reduced treatment costs</li>
+            </ul>
             <button class="view-dashboard-btn" onclick="toggleCaseStudy('oncology')">📊 View Case Study & Screenshots</button>
         </div>
 
+        <!-- Pharma Supply Chain Project -->
         <div class="project-card">
-            <div class="project-tools">Tools: Python (pandas, NumPy), Power BI, SQL</div>
+            <div class="project-tools">Tools: Python (pandas, NumPy), Power BI, Predictive Modeling, SQL</div>
             <h3>📦 Pharmaceutical Supply Chain Risk & Inventory Optimization</h3>
-            <p>Created executive dashboard providing visibility into inventory risk, delayed shipments, and forecasted shortages.</p>
+            <p>Created executive dashboard providing visibility into inventory risk, delayed shipments, and forecasted shortages. Applied predictive modeling to identify high-risk suppliers and prevent stockouts.</p>
+            <ul>
+                <li>Forecasted potential stockouts proactively</li>
+                <li>Identified high-risk suppliers for intervention</li>
+                <li>Automated workflows improving decision-making speed</li>
+            </ul>
             <button class="view-dashboard-btn" onclick="toggleCaseStudy('pharma')">📊 View Case Study & Screenshots</button>
         </div>
+
+    </section>
+
+    <!-- GPO Case Study -->
+    <section id="gpo-case-study" class="case-study">
+        <h2>🏥 GPO Membership & Contract Dashboard — Case Study</h2>
+
+        <p>Healthcare Group Purchasing Organizations (GPOs) negotiate contracts on behalf of members to reduce costs and improve efficiency. This dashboard tracks membership growth, top-performing GPOs, and compliance risks.</p>
+
+        <h3>Dashboard Screenshots</h3>
+        <div class="dashboard-grid">
+            <img src="https://raw.githubusercontent.com/aj6567/gpo-analytics-dashboard/main/images/gpo_overview.jpg" alt="GPO Dashboard Overview" onclick="window.open(this.src)">
+            <img src="https://raw.githubusercontent.com/aj6567/gpo-analytics-dashboard/main/images/gpo_contract.jpg" alt="Contract Analysis" onclick="window.open(this.src)">
+            <img src="https://raw.githubusercontent.com/aj6567/gpo-analytics-dashboard/main/images/gpo_compliance.jpg" alt="Compliance Dashboard" onclick="window.open(this.src)">
+            <img src="https://raw.githubusercontent.com/aj6567/gpo-analytics-dashboard/main/images/gpo_risk_analysis.jpg" alt="Risk Analysis" onclick="window.open(this.src)">
+        </div>
+
+        <h3>Key Insights</h3>
+        <ul>
+            <li>Membership shows steady year-over-year growth with regional variations</li>
+            <li>A small number of GPOs dominate total contract value, increasing negotiating leverage</li>
+            <li>High-risk members cluster within specific regions, signaling need for targeted oversight</li>
+        </ul>
+
+        <a href="https://github.com/aj6567/gpo-analytics-dashboard" target="_blank" class="github-link">📂 View Full Project on GitHub</a>
+    </section>
+
+    <!-- Oncology Case Study -->
+    <section id="oncology-case-study" class="case-study">
+        <h2>💊 Oncology Drug Utilization & Patient Outcomes — Case Study</h2>
+
+        <p>Comprehensive analytics dashboard tracking oncology drug utilization, patient outcomes, and treatment effectiveness to optimize care delivery and formulary decisions.</p>
+
+        <h3>Dashboard Screenshots</h3>
+        <div class="dashboard-grid">
+          <img src="https://raw.githubusercontent.com/aj6567/oncology-utilization-dashboard/main/images/oncology-utilization-dashboard.jpg" alt="Oncology Dashboard Overview" onclick="window.open(this.src)">
+        </div>
+
+        <h3>Key Insights</h3>
+        <ul>
+            <li>Newer immunotherapy agents show 35% year-over-year growth in utilization</li>
+            <li>Early-stage patients achieve 78% response rates compared to 42% for late-stage patients</li>
+            <li>Three targeted therapies deliver 65%+ response rates at 20-30% lower costs</li>
+            <li>Patients aged 75+ receive 40% fewer novel therapies, indicating potential access barriers</li>
+        </ul>
+
+        <a href="https://github.com/aj6567/oncology-utilization-dashboard" target="_blank" class="github-link">📂 View Full Project on GitHub</a>
+    </section>
+
+    <!-- Pharma Supply Chain Case Study -->
+    <section id="pharma-case-study" class="case-study">
+        <h2>📦 Pharmaceutical Supply Chain Risk & Inventory Optimization — Case Study</h2>
+
+        <p>Executive dashboard providing real-time visibility into inventory levels, shipment tracking, and supplier risk management across pharmaceutical distribution centers.</p>
+
+        <h3>Dashboard Screenshots</h3>
+        <div class="dashboard-grid">
+            <img src="https://raw.githubusercontent.com/aj6567/pharma-supply-chain-dashboard/main/images/pharma-supply-chain-dashboard.jpg" alt="Supply Chain Dashboard" onclick="window.open(this.src)">
+        </div>
+
+        <h3>Key Insights</h3>
+        <ul>
+            <li>Only 68.8% on-time delivery rate with 26.5% delayed and 4.7% lost shipments</li>
+            <li>Several suppliers show compliance scores below 1,500 with risk ratings above 10</li>
+            <li>1,000 SKUs flagged at risk of stockout requiring immediate intervention</li>
+            <li>Seasonal patterns identified in shipment volumes and delay rates</li>
+        </ul>
+
+        <a href="https://github.com/aj6567/pharma-supply-chain-dashboard" target="_blank" class="github-link">📂 View Full Project on GitHub</a>
     </section>
 
     <!-- Contact -->
@@ -135,8 +220,8 @@
         <div class="contact-grid">
             <div class="contact-item"><span>💼</span><a href="https://www.linkedin.com/in/antenise-ellis" target="_blank">LinkedIn</a></div>
             <div class="contact-item"><span>📧</span><a href="mailto:anteniseellis@gmail.com">anteniseellis@gmail.com</a></div>
+            <div class="contact-item"><span>📱</span><span>(682) 403-2286</span></div>
         </div>
-        <a href="resume.pdf" class="view-dashboard-btn">📄 Download Resume</a>
     </section>
 
 </div>
@@ -148,11 +233,22 @@ function toggleCaseStudy(project) {
         'oncology': document.getElementById('oncology-case-study'),
         'pharma': document.getElementById('pharma-case-study')
     };
+    
     const targetStudy = caseStudies[project];
-    Object.values(caseStudies).forEach(study => { if (study && study !== targetStudy) study.style.display = 'none'; });
-    if (targetStudy) {
-        targetStudy.style.display = targetStudy.style.display === 'block' ? 'none' : 'block';
+    
+    // Close all other case studies
+    Object.values(caseStudies).forEach(study => {
+        if (study !== targetStudy) {
+            study.style.display = 'none';
+        }
+    });
+    
+    // Toggle target case study
+    if (targetStudy.style.display === 'none' || targetStudy.style.display === '') {
+        targetStudy.style.display = 'block';
         targetStudy.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    } else {
+        targetStudy.style.display = 'none';
     }
 }
 </script>
